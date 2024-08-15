@@ -1,0 +1,388 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            display: none;
+            z-index: 50;
+        }
+        .scroll-to-top.show {
+            display: block;
+        }
+    </style>
+
+
+</head>
+
+<body class="bg-[#0f0715] overflow-x-hidden">
+    <nav>
+        <div class="flex justify-between items-center w-[100%] m-auto flex-wrap p-5">
+            <div class="flex items-center lg:ml-[250px]">
+                <img src="nextlogo.png" alt="Logo" class="w-20  h-20 rounded-full">
+            </div>
+
+
+            <div class="block lg:hidden">
+                <button id="menu-btn" class="text-white">
+
+                    <svg id="hamburger-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+
+                    <svg id="close-icon" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="menu"
+                class="hidden lg:flex lg:flex-row flex-col lg:gap-6 gap-4 items-center text-white font-sans font-medium lg:text-2xl text-xl lg:p-0 p-4">
+                <a href="#" class="hover:border-b p-2 rounded-lg duration-300 flex flex-col lg:flex-row">Home</a>
+                <a href="#cv" class="hover:border-b p-2 rounded-lg duration-300 flex flex-col lg:flex-row">Resume</a>
+                <a href="#project"
+                    class="hover:border-b p-2 rounded-lg duration-300 flex flex-col lg:flex-row">Projects</a>
+                <a href="#skills"
+                    class="hover:border-b p-2 rounded-lg duration-300 flex flex-col lg:flex-row">Skills</a>
+                <a href="#contact"
+                    class="hover:border-b p-2 rounded-lg duration-300 flex flex-col lg:flex-row">Contact</a>
+                <a href="#contact"> <button
+                        class="px-5 py-2 border rounded-full text-white font-sans font-medium bg-[#8750f7] hover:bg-[#4f2b96] duration-300">
+                        Hire Me!
+                    </button></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div
+            class="flex flex-col flex-wrap justify-center m-auto items-center p-10 text-white font-sans mt-10 lg:flex-row">
+            <div id="left" class="flex m-auto w-[100%] lg:basis-1/2 flex-col gap-5">
+                <h3 class="text-[50px]">I am Rishi</h3>
+                <h1
+                    class="text-5xl py-2 font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent lg:text-[85px]">
+                    Web Developer + UI Designer</h1>
+                <p class="text-lg text-justify font-semibold">Explore my portfolio to see how I blend HTML, CSS, and
+                    JavaScript to develop responsive, aesthetically pleasing, and interactive websites. Each project
+                    showcases my commitment to delivering high-quality digital experiences that not only meet but exceed
+                    user expectations.</p>
+                <h4 class="text-xl font-medium">Let's embark on a journey through my work, where innovation meets
+                    design!</h4>
+
+                <div id="btn">
+                    <a href="resume.pdf" download="Rishi_Resume.pdf"> <button
+                            class="border rounded-full p-3 hover:bg-gradient-to-r hover:from-purple-600 hover:to-red-500 mt-5">Download
+                            CV </button></a>
+                </div>
+            </div>
+            <div id="right" class="flex mt-10">
+                <img src="Me.png" alt="img" width="450px" height="450px">
+            </div>
+        </div>
+    </main>
+
+    <!-- study and Achievement -->
+    <div id="cv" class="flex flex-col justify-center items-center  gap-24 mt-10 text-white bg-black md:flex-row">
+        <div class="p-7" data-aos="fade-right">
+            <div class="flex gap-3 items-center justify-center p-3 lg:p-5">
+                <i class="fa-solid fa-graduation-cap text-2xl lg:text-4xl"></i>
+                <h1 class="text-3xl lg:text-5xl">My Education</h1>
+            </div>
+            <div data-aos="zoom-in"
+                class="group rounded-xl border bg-[#140c1c] m-auto  w-[297px] h-[230px] py-5 px-8 lg:w-auto lg:h-auto lg:py-10 lg:px-32 mt-10 hover:bg-gradient-to-r hover:from-purple-600 hover:via-purple-500  hover:to-purple-300 duration-300">
+                <b class="text-[#8750f7] text-2xl lg:text-3xl group-hover:text-white">JUNE 2024</b>
+                <h2
+                    class="font-bold text-2xl lg:text-3xl mt-5  bg-gradient-to-r from-purple-200 via-pink-500 to-red-500 bg-clip-text text-transparent">
+                    9.30 CGP</h2>
+                <h2 class="font-medium text-xl lg:text-4xl mt-5">BSC (CS & IT) 1st Year</h2>
+                <h3 class="font-semibold text-xl mt-5">Silver Oak University</h3>
+            </div>
+            <div data-aos="zoom-in"
+                class="group rounded-xl border bg-[#140c1c] m-auto w-[297px] h-[230px] py-5 px-8 lg:w-auto lg:h-auto lg:py-10 lg:px-32  mt-10 hover:bg-gradient-to-r hover:from-purple-600 hover:via-purple-500  hover:to-purple-300 duration-300">
+                <b class="text-[#8750f7] text-2xl lg:text-3xl group-hover:text-white">MARCH 2023</b>
+                <h2
+                    class="font-bold text-2xl lg:text-3xl mt-5  bg-gradient-to-r from-purple-200 via-pink-500 to-red-500 bg-clip-text text-transparent">
+                    88.54 %</h2>
+                <h2 class="font-medium text-2xl lg:text-4xl mt-5">HSC (12th)</h2>
+                <h3 class="font-semibold text-xl mt-5">M.J.C.K.R</h3>
+            </div>
+            <div data-aos="zoom-in"
+                class="group rounded-xl border bg-[#140c1c] m-auto w-[297px] h-[230px] py-5 px-8 lg:w-auto lg:h-auto lg:py-10 lg:px-32  mt-10 hover:bg-gradient-to-r hover:from-purple-600 hover:via-purple-500  hover:to-purple-300 duration-300">
+                <b class="text-[#8750f7] text-2xl lg:text-3xl group-hover:text-white">MAY 2021</b>
+                <h2
+                    class="font-bold text-2xl lg:text-3xl mt-5  bg-gradient-to-r from-purple-200 via-pink-500 to-red-500 bg-clip-text text-transparent">
+                    88.64 %</h2>
+                <h2 class="font-medium text-2xl lg:text-4xl mt-5">SSC (10th)</h2>
+                <h3 class="font-semibold text-xl mt-5">M.J.C.K.R</h3>
+            </div>
+        </div>
+
+
+        <div class="p-7" data-aos="fade-left">
+            <div class="flex gap-3 items-center justify-center p-3 lg:p-5" >
+                <i class="fa-solid fa-star text-2xl lg:text-4xl"></i>
+                <h1 class="text-3xl lg:text-5xl">My Achievement</h1>
+            </div>
+            <div data-aos="zoom-in"
+                class="group rounded-xl border bg-[#140c1c] m-auto w-[297px] h-[230px] py-5 px-8 lg:w-auto lg:h-auto lg:py-10 lg:px-32  mt-10 hover:bg-gradient-to-r hover:from-purple-600 hover:via-purple-500  hover:to-purple-300 duration-300">
+                <b class="text-[#8750f7] text-2xl lg:text-3xl group-hover:text-white">2023-24</b>
+                <h2
+                    class="font-bold text-xl lg:text-3xl mt-5  bg-gradient-to-r from-purple-200 via-pink-500 to-red-500 bg-clip-text text-transparent">
+                    Blind Coding <span class="hidden lg:block">Competition</span></h2>
+                <h2 class="font-medium text-lg lg:text-4xl mt-3">A National Level Multidisciplinary Conclave</h2>
+                <h3 class="font-semibold text-lg mt-2">Silver Oak University</h3>
+            </div>
+            <div data-aos="zoom-in"
+                class="group rounded-xl border bg-[#140c1c] m-auto w-[297px] h-[230px] py-5 px-8 lg:w-auto lg:h-auto lg:py-10 lg:px-32  mt-10 hover:bg-gradient-to-r hover:from-purple-600 hover:via-purple-500  hover:to-purple-300 duration-300">
+                <b class="text-[#8750f7] text-2xl lg:text-3xl group-hover:text-white">April 2024</b>
+                <h2
+                    class="font-bold text-2xl lg:text-3xl mt-5  bg-gradient-to-r from-purple-200 via-pink-500 to-red-500 bg-clip-text text-transparent">
+                    1 Month Internship</h2>
+                <h2 class="font-medium text-2xl lg:text-4xl mt-5">Web Development</h2>
+                <h3 class="font-semibold text-xl mt-5">OASIS INFOBYTE</h3>
+            </div>
+            <div data-aos="zoom-in"
+                class="group rounded-xl border bg-[#140c1c] m-auto w-[297px] h-[230px] py-5 px-8 lg:w-auto lg:h-auto lg:py-10 lg:px-32  mt-10 hover:bg-gradient-to-r hover:from-purple-600 hover:via-purple-500  hover:to-purple-300 duration-300">
+                <b class="text-[#8750f7] text-2xl lg:text-3xl group-hover:text-white">2023-24</b>
+                <h2
+                    class="font-bold text-xl lg:text-3xl mt-5  bg-gradient-to-r from-purple-200 via-pink-500 to-red-500 bg-clip-text text-transparent">
+                    JavaScript Certificate</h2>
+                <h2 class="font-medium text-2xl lg:text-4xl mt-5">JavaScript</h2>
+                <h3 class="font-semibold text-xl mt-5">KG CODING</h3>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- project -->
+
+
+    <div id="project" class="flex flex-col gap-5 lg:gap-10 justify-center items-center p-2 lg:p-10 mt-10 text-white">
+        <div class="flex gap-3 items-center justify-center p-3 lg:p-5">
+            <i class="fa-brands fa-edge text-2xl lg:text-4xl"data-aos="zoom-in"></i>
+            <h1 class="text-3xl lg:text-5xl" data-aos="zoom-in">My Projects</h1>
+        </div>
+
+        <div class="flex flex-col lg:flex-row lg:flex-wrap lg:justify-center gap-5 lg:gap-10 w-full mx-auto">
+
+            <div data-aos="fade-right"
+                class="border rounded-xl p-5 lg:p-6 flex flex-col gap-5 lg:gap-10 m-auto w-full sm:w-[95%] md:w-[48%] lg:w-[48%] h-auto hover:bg-gradient-to-br hover:from-purple-600 hover:via-red-600 hover:to-purple-400">
+                <a href="https://cakeking.netlify.app/" target="_blank">
+                    <img src="project1.png" alt="img"
+                        class="rounded-xl transition-transform duration-300 hover:scale-105">
+                </a>
+                <h2
+                    class="font-bold text-2xl lg:text-4xl mt-5 bg-gradient-to-r from-purple-200 via-pink-500 to-red-500 bg-clip-text text-transparent">
+                    Cake Selling Website</h2>
+                <p class="text-justify text-xl">This project showcases a beautifully designed cake website, highlighting
+                    my expertise in web development and user experience. The site features smooth animations that
+                    enhance visual appeal and interactivity. It includes advanced search functionality and category
+                    filters. The website is fully responsive, ensuring a seamless browsing experience on any device.</p>
+            </div>
+
+            <div data-aos="fade-left"
+                class="border rounded-xl p-5 lg:p-6 flex flex-col gap-5 lg:gap-10 m-auto w-full sm:w-[95%] md:w-[48%] lg:w-[48%] h-auto hover:bg-gradient-to-br hover:from-purple-600 hover:via-red-600 hover:to-purple-400">
+                <a href="https://htmlcheatcode.netlify.app/" target="_blank">
+                    <img src="project2.png" alt="img"
+                        class="rounded-xl transition-transform duration-300 hover:scale-105">
+                </a>
+                <h2
+                    class="font-bold text-2xl lg:text-4xl mt-5 bg-gradient-to-r from-purple-200 via-pink-500 to-red-500 bg-clip-text text-transparent">
+                    HTML Cheat Sheet</h2>
+                <p class="text-justify text-xl">This project is a comprehensive HTML Cheat Sheet, designed to serve as a
+                    quick reference guide for developers. It includes a complete list of HTML tags, with detailed
+                    explanations and examples. The cheat sheet features a convenient copy tag functionality, allowing
+                    users to easily copy the code snippets with a single click. Additionally.</p>
+            </div>
+
+
+            <div data-aos="zoom-in"
+                class="border rounded-xl p-5 lg:p-6 flex flex-col gap-5 lg:gap-10 m-auto w-full sm:w-[95%] md:w-[48%] lg:w-[48%] h-auto hover:bg-gradient-to-br hover:from-purple-600 hover:via-red-600 hover:to-purple-400">
+                <a href="https://guitargalaxy.netlify.app/" target="_blank">
+                    <img src="project3.png" alt="img"
+                        class="rounded-xl transition-transform duration-300 hover:scale-105">
+                </a>
+                <h2
+                    class="font-bold text-2xl lg:text-4xl mt-5 bg-gradient-to-r from-purple-200 via-pink-500 to-red-500 bg-clip-text text-transparent">
+                    Guitar World</h2>
+                <p class="text-justify text-xl">This project involved a complete redesign of the Guitar Kaksha website,
+                    where I developed a modern and visually appealing design tailored for a guitar learning platform.
+                    The redesign focused on enhancing user experience, making the site more intuitive and engaging for
+                    visitors. This project was also an assessment task for an internship, showcasing my ability to
+                    combine creative design with practical functionality.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- skills  -->
+
+    <div id="skills" class="text-white p-5 mt-10 bg-black">
+        <div class="flex gap-3 items-center justify-center p-3 lg:p-5">
+
+            <i class="fa-brands fa-r-project text-2xl lg:text-4xl" data-aos="zoom-in"></i>
+            <h1 class="text-3xl lg:text-5xl" data-aos="zoom-in">My Skills</h1>
+        </div>
+        <div class="flex flex-col lg:p-10 gap-10 lg:flex-row">
+            <div data-aos="fade-right"
+                class="flex flex-col p-3 lg:px-14 lg:py-6 border rounded-xl gap-5 w-[280px] md:w-[450px] m-auto mt-5 h-[370px] lg:h-[340px] hover:bg-white group">
+                <i
+                    class="fa-brands fa-html5 text-8xl  bg-gradient-to-t from-orange-400 via-pink-500 to-red-500 bg-clip-text text-transparent text-center"></i>
+                <h2
+                    class="text-3xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent text-center">
+                    HTML 5</h2>
+                <p class="text-lg group-hover:text-black group-hover:font-semibold">I have a solid understanding of
+                    HTML5 and its various elements, attributes, and best
+                    practices. I am proficient in creating responsive and accessible web pages.</p>
+            </div>
+            <div data-aos="fade-left"
+                class="flex flex-col p-3 lg:px-14 lg:py-6 border rounded-xl gap-5 w-[280px] md:w-[450px] m-auto mt-5 h-[370px] lg:h-[340px] hover:bg-white group">
+                <i
+                    class="fa-brands fa-css3-alt text-8xl  bg-gradient-to-l from-orange-400 via-pink-500 to-red-500 bg-clip-text text-transparent text-center"></i>
+                <h2
+                    class="text-3xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent text-center">
+                    CSS 3</h2>
+                <p class="text-lg group-hover:text-black group-hover:font-semibold">I have a solid understanding of
+                    CSS3, including Grid and Flexbox, as well as advanced
+                    techniques like
+                    animations and transitions.</p>
+            </div>
+
+            <div data-aos="fade-right"
+                class="flex flex-col p-3 lg:px-14 lg:py-6 border rounded-xl gap-5 w-[280px] md:w-[450px] h-[370px] lg:h-[340px] m-auto mt-5 hover:bg-white group">
+                <i
+                    class="fa-brands fa-js text-8xl  bg-gradient-to-b  from-orange-400 via-pink-500 to-red-500 bg-clip-text text-transparent text-center"></i>
+                <h2
+                    class="text-3xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent text-center">
+                    JavaScript</h2>
+                <p class="text-lg group-hover:text-black group-hover:font-semibold">I have a solid understanding of
+                    JavaScript, including ES6 features, different types
+                    of Loops, Conditional statements and the different methods of Array and Strings.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:p-10 gap-10 lg:flex-row mt-7">
+            <div data-aos="fade-left"
+                class="flex flex-col p-3 lg:px-14 lg:py-6 border rounded-xl gap-5 w-[280px] md:w-[450px] m-auto mt-5 h-[370px] lg:h-[340px] group hover:bg-white">
+                <i
+                    class="fa-brands fa-bootstrap text-8xl  bg-gradient-to-t from-orange-400 via-pink-500 to-red-500 bg-clip-text text-transparent text-center"></i>
+                <h2
+                    class="text-3xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent text-center">
+                    Bootstrap</h2>
+                <p class="text-lg group-hover:text-black group-hover:font-semibold">I have a solid understanding of
+                    Bootstrap, including its responsive design
+                    principles and its various components and utilities.</p>
+            </div>
+            <div data-aos="fade-right"
+                class="group flex flex-col p-3 lg:px-14 lg:py-6 border rounded-xl gap-5 w-[280px] md:w-[450px] m-auto mt-5 h-[370px] lg:h-[340px] hover:bg-white">
+                <i
+                    class="fa-brands fa-python text-8xl  bg-gradient-to-l from-orange-400 via-pink-500 to-red-500 bg-clip-text text-transparent text-center"></i>
+                <h2
+                    class="text-3xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent text-center">
+                    Python</h2>
+                <p class="text-lg group-hover:text-black group-hover:font-semibold">I have a solid understanding of
+                    Python, including its syntax, data types, and control
+                    flow structures and i continuously practice python code for practice.</p>
+            </div>
+
+            <!-- <div
+                class="flex flex-col p-3 lg:px-14 lg:py-6 border rounded-xl gap-5 w-[280px] md:w-[450px] h-[370px] lg:h-[340px] m-auto mt-5">
+                <i
+                    class="fa-brands fa-js text-8xl  bg-gradient-to-b  from-orange-400 via-pink-500 to-red-500 bg-clip-text text-transparent text-center"></i>
+                <h2
+                    class="text-3xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent text-center">
+                    JavaScript</h2>
+                <p class="text-lg">I have a solid understanding of JavaScript, including ES6 features, different types
+                    of Loops, Conditional statements and the different methods of Array and Strings.</p>
+            </div> -->
+        </div>
+
+    </div>
+
+
+    <!-- contact  -->
+
+    <div id="contact" class="max-w-4xl  mx-auto bg-white rounded-lg shadow-lg overflow-hidden md:flex mt-10"data-aos="zoom-in">
+
+        <div class="w-full md:w-1/2 p-5 lg:p-8">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Contact Me</h2>
+            <form action="#" method="get">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-600">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Good Name" required
+                        class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-600">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-600">Email Address</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-600">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-600">Message</label>
+                    <textarea id="message" placeholder="Type Message Here..." name="message" rows="4"
+                        class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-600"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition duration-300">Send
+                    Message</button>
+            </form>
+        </div>
+
+        <div class="w-full md:w-1/2 bg-purple-600 text-white p-8 flex flex-col justify-center">
+            <div class="mb-6">
+                <i class="fas fa-map-marker-alt text-2xl"></i>
+                <p class="ml-4 text-lg">3B, vivekananda society Mahalaxmi Five Road,Paldi Ahmedabad Gujarat 380007</p>
+            </div>
+            <div class="mb-6">
+                <i class="fas fa-phone-alt text-2xl"></i>
+                <p class="ml-4 text-lg">+91 7201071233</p>
+            </div>
+            <div>
+                <i class="fas fa-envelope text-2xl"></i>
+                <p class="ml-4 text-lg">rishikothari.14.2006@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer class="text-gray-800 bg-white p-8 text-center mt-10">
+        &copy; 2024 Rishi Kothari. All rights reserved.
+    </footer>
+
+    <button id="scrollToTopBtn" class="scroll-to-top bg-purple-600 text-white p-3 rounded-full shadow-lg hover:bg-purple-700 transition duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 70,
+            duration: 1300,
+        });
+
+    </script>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
